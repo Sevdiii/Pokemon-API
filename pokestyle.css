@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.field-of-Pokemon {
+    background-color: orange;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.pokemon {
+    padding: 25px;
+}
+
+#nameofpokemon {
+    font-size: 55px;
+}
+
+.pokemon p {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    width: 85px;
+    text-align: center;
+}
+
+.pokeimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#poimage {
+    width: 350px;
+    height: 350px;
+    margin-top: -45px;
+    object-fit: contain;
+}
+
+.container-for-topics {
+    background-color: white;
+    border-radius: 40px;
+    margin-top: -40px;
+    height: 10vh;
+}
+
+.topic-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.base-Stats {
+    border-bottom: 4px solid black;
+}
+
+
+/*----Attributes-------------------------*/
+
+.attributes-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+}
+
+.progress {
+    width: 50%;
+}
+
+.attri {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.pokemon-info {
+    display: flex;
+}
+
+.pokemon-info h5 {
+    margin-left: 25px;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+@media (max-width: 1000px) {
+    .field-of-Pokemon {
+        width: 100%;
+    }
+    #poimage {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+    #nameofpokemon {
+        font-size: 35px;
+    }
+    .topic-container {
+        font-size: 20px;
+    }
+    .attributes-container {
+        width: 100%;
+    }
+    .attributes-from-pokemons {
+        width: 100%;
+        margin-left: -150px;
+    }
+    #nameofstat1 {
+        font-size: 15px;
+    }
+    .pokemon-info {
+        width: 100%;
+        margin-left: -260px;
+        display: flex;
+        flex-direction: column;
+    }
+    .pokemon-info p {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
